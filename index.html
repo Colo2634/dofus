@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Comparateur de prix Dofus</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h1>Comparateur de prix Dofus</h1>
+  <section id="form-section">
+    <h2>Ajouter / Mettre à jour un item</h2>
+    <form id="item-form">
+      <label>Nom: <input type="text" id="item-name" required></label>
+      <label>Catégorie: <input type="text" id="item-category" required></label>
+      <label>Prix x1: <input type="number" id="price-1" required></label>
+      <label>Prix x10: <input type="number" id="price-10" required></label>
+      <label>Prix x100: <input type="number" id="price-100" required></label>
+      <label>Prix x1000: <input type="number" id="price-1000" required></label>
+      <button type="submit">Enregistrer</button>
+    </form>
+  </section>
+  <section id="items-section">
+    <h2>Items par catégorie</h2>
+    <div id="items-container"></div>
+  </section>
+  <section id="history-section" class="hidden">
+    <h2>Historique des prix</h2>
+    <canvas id="history-chart"></canvas>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
